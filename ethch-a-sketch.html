@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="etch.css">
+</head>
+<body>
+    <div class="whole-body">
+
+        <h1> ETCH-A-SKETCH</h1>
+        
+        <div class="manipulate">
+        
+            <div class="control">
+                <div class="hrr"></div>
+                <h2>Choose your style</h2><br>
+
+                <div class="hrr" style="margin-left: 310px;margin-top: -35px;padding-right: 3px;"></div>
+                <h3>Brush Size <img src="brush.png" width="40px" style="margin-top: -30px; "></h3><br>
+
+                <label style="margin-left: 20px;font-size: 20px;">10</label>
+                <input type="range" id="ranger" value="10" min="10" max="100" onchange="makeGrid();" oninput="document.getElementById('sizes').innerHTML = this.value">
+
+                <label style="font-size: 20px;margin-right: 1px;">100</label>
+                <h4>size :</h4><h4 id="sizes">10</h4>
+
+                <h3 style="margin-top: 10px;font-size: 25px;margin-left: 40px; ">Choose Paint Color</h3>
+                <input type="color" id="colors" onchange="brush()">
+
+                <h3 style="margin-top: 20px;font-size: 25px;margin-left: 5px; text-align: center;">Multi Color</h3>
+                <input type="button" id="mcolor" value="Rainbow" onclick="startRainbow()">
+            </div>
+
+            <div class="rest">
+                <!-- <button id="reseter1" onclick="resetedbg()">Reset bgcolor</button> -->
+                <button id="reseter2" onclick="createCanvas()">ResetBrushcolor</button>
+
+            </div>
+
+            <div id="drawCanvas">
+                <!-- <img src="brush.png" id="brushed"> -->
+            </div>
+            
+        </div>
+    </div>
+    <script src="etch.js"></script> 
+
+</body>
+</html>

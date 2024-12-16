@@ -1,0 +1,135 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    /* background-image: url("back.gif"); */
+}
+.whole-body{
+    display: flex;
+    flex-wrap: wrap;
+}
+.whole-body h1{
+    text-align: center;
+    font-size: 50px;
+    margin-left: 90px;
+}
+.manipulate{
+    border: 1px solid black;
+    height: 700px;
+    width: 1100px;
+    margin-top: 0px;
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    row-gap: 10px;
+    justify-content: space-evenly;
+}
+.hrr{
+    border: 2px solid black;
+    width: 35px;
+}
+.control{
+    height: 500px;
+    width: 350px;
+    border: 5px solid black;
+    border-top: none;
+    margin-top: 50px;
+    margin-left:10px ;
+    background-color: white;
+}
+.control h2{
+    background-color: white;
+    font-size: 25px;
+    margin-left: 35px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline;
+    border: 5px solid black;
+    border-radius: 7px;
+    border-bottom: none;
+    margin-top: -50px;
+}
+.control h3{
+    margin-top: 90px;
+    margin-left: 50PX;
+}
+.control input[type=range]{
+    margin-left: 10px;
+    margin-right: 7px;
+    width: 200px;
+}
+.control h4{
+    margin-left: 120px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+#sizes{
+    margin-top: -17px;
+    margin-left: 170px;
+    font-size: 14px;
+}
+.control input[type=color]{
+    height: 50px;
+    margin-left: 140px;
+    background-repeat: repeat;
+    margin-top: 20px;
+}
+#drawCanvas{
+    width: 40%;
+    height: 500px;
+    margin: 20px auto;
+    border: 1px solid #000;
+    position: relative;
+}
+.drawCell {
+    background-color: white;
+    border: 5px solid #ddd;
+    position: absolute;
+}
+
+/* Style to change the background color when drawing */
+.drawing {
+    background-color: lightcoral;
+}
+
+/* Styling for input controls */
+
+#brushed{
+    width: 30px;
+    height: 30px;
+    /* display: none; */
+}
+#reseter1{
+    margin-top: 600px;
+    margin-left: -250px;
+    margin-bottom: -50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color:floralwhite;
+    background-image: linear-gradient(to top,rgb(255, 47, 47) 20px,gray);
+    border-radius: 20px;
+    border: 1px solid white;
+}
+#reseter2{
+    background-image: linear-gradient(to top,rgb(255, 47, 47) 20px,gray);
+    color:floralwhite;
+    border-radius: 20px;
+    border: 1px solid white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    word-spacing: -10px;
+    margin-left: -310px;
+}
+.cell{
+    border: 1px solid gray;
+    background-color: white;
+}
